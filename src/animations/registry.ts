@@ -24,6 +24,7 @@ import { AnimatedClipBox } from './animated-clip-box';
 import { AnimatedCountText } from './animated-count-text';
 import { AnimatedGridList } from './animated-grid-list';
 import { AnimatedIndicatorList } from './animated-indicator-list';
+import { ArtGallery } from './art-gallery';
 import { AtlasButton } from './atlas-button';
 import { AtlasSphere } from './atlas-sphere';
 import { AudioPlayer } from './audio-player';
@@ -253,6 +254,7 @@ export const AnimationRegistry = {
   'notion-qrcode': NotionQRCode,
   'github-terrain': GitHubTerrain,
   'cherry-blossom-qrcode': CherryBlossomQRCode,
+  'art-gallery': ArtGallery,
 } as const;
 
 export const AnimationMetadata: Record<string, AnimationMetadataType> = {
@@ -856,6 +858,12 @@ export const AnimationMetadata: Record<string, AnimationMetadataType> = {
     name: 'Cherry Blossom QR',
     route: 'CherryBlossomQRCode',
     iconName: 'flower-outline',
+  },
+  'art-gallery': {
+    name: 'Art Gallery',
+    route: 'ArtGallery',
+    iconName: 'images-outline',
+    hideDrawerIcon: true,
   },
 } as const;
 
